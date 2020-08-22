@@ -18,4 +18,7 @@
 
     'depends': ['crm'],
 
+    'data': [
+        'views/views.xml',
+    ]
 }
