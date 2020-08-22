@@ -5,7 +5,7 @@
         model="crm.lead"
         string="Lead"
         report_type="qweb-pdf"
-        name="qualifica-cliente.lead_report"
-        file="qualifica-cliente.lead_report"
+        name="lead-qualificado.lead_report"
+        file="lead-qualificado.lead_report"
     />
 </odoo>
