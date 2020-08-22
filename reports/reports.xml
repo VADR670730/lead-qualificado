@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo> 
+    <report
+        id="lead_report_card"
+        model="crm.lead"
+        string="Lead"
+        report_type="qweb-pdf"
+        name="qualifica-cliente.lead_report"
+        file="qualifica-cliente.lead_report"
+    />
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="lead_report">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="o">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <h2>Detalhes do lead</h2>
+                    <p>Nome: <span t-field="o.name"/></p>
+                    <p>Quantidade de unidades: <span t-field="o.quantidade_unidades"/></p>
+                    <p>Quantidade de blocos: <span t-field="o.quantidade_blocos"/></p>
+                    <p>Quantidade de moradores: <span t-field="o.quantidade_moradores"/></p>
+                    <p>Tipo de portaria: <span t-field="o.tipo_portaria"/></p>
+                    <p>Horário da portaria: <span t-field="o.horario_portaria"/></p>
+
+                </div>
+            </t>
+        </t>
+    </t>
+</template>
+</odoo>

@@ -20,5 +20,7 @@
 
     'data': [
         'views/views.xml',
+        'reports/lead_report.xml',
+        'reports/reports.xml',
     ]
 }
