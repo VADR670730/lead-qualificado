@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="lead_report">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="o">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <h2>Oportunidade <span t-field="o.name"/> no cliente <span t-field="o.partner_id"/></h2>
+                    <hr/>
+                    <style type="text/css">
+                        div.lead {
+                            border: 2px solid #FFFFFF;
+                            width: 100%;
+                            text-align: left;
+                        }
+                        .divTable.lead .divTableCell, .divTable.lead .divTableHead {
+                            border: 1px solid #FFFFFF;
+                            padding: 3px 4px;
+                        }
+                        .divTable.lead .divTableBody .divTableCell {
+                            font-size: 13px;
+                        }
+                        .divTable.lead .divTableRow:nth-child(even) {
+                            background: #D0E4F5;
+                        }
+                        .lead .tableFootStyle {
+                            font-size: 14px;
+                        }
+                        .divTable{ display: table; }
+                        .divTableRow { display: table-row; }
+                        .divTableHeading { display: table-header-group;}
+                        .divTableCell, .divTableHead { display: table-cell;}
+                        .divTableHeading { display: table-header-group;}
+                        .divTableFoot { display: table-footer-group;}
+                        .divTableBody { display: table-row-group;}
+                    </style>
+                    <div class="divTable lead">
+                        <div class="divTableBody">
+                            <div class="divTableRow">
+                                <div class="divTableCell">Receita esperada</div>
+                                <div class="divTableCell"><span t-field="o.planned_revenue"/> em <span t-field="o.probability"/>%</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">E-mail</div>
+                                <div class="divTableCell"><span t-field="o.email_from"/></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">Telefone</div>
+                                <div class="divTableCell"><span t-field="o.phone"/></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">Vendedor</div>
+                                <div class="divTableCell"><span t-field="o.user_id"/></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">Equipe de vendas</div>
+                                <div class="divTableCell"><span t-field="o.team_id"/></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">Fechamento esperado</div>
+                                <div class="divTableCell"><span t-field="o.date_deadline"/></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">Quantidade de unidades</div>
+                                <div class="divTableCell"><span t-field="o.quantidade_unidades"/></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">Quantidade de blocos</div>
+                                <div class="divTableCell"><span t-field="o.quantidade_blocos"/></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">Quantidade de moradores</div>
+                                <div class="divTableCell"><span t-field="o.quantidade_moradores"/></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">Tipo de portaria</div>
+                                <div class="divTableCell"><span t-field="o.tipo_portaria"/></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">Horário da portaria</div>
+                                <div class="divTableCell"><span t-field="o.horario_portaria"/></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">Prioridade</div>
+                                <div class="divTableCell"><span t-field="o.priority"/></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">Marcadores</div>
+                                <div class="divTableCell"><span t-field="o.tag_ids"/></div>
+                            </div>
+                        </div>
+                    </div>
+                                        
+
+                </div>
+            </t>
+        </t>
+    </t>
+</template>
+</odoo>
