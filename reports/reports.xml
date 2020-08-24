@@ -23,4 +23,12 @@
         name="lead-qualificado.lead_report"
         file="lead-qualificado.lead_report"
     />
+    <report
+        id="lead_report_qualificado"
+        model="crm.lead"
+        string="Qualificações do lead"
+        report_type="qweb-pdf"
+        name="lead-qualificado.lead_report_qualificado"
+        file="lead-qualificado.lead_report_qualificado"
+    />
 </odoo>
