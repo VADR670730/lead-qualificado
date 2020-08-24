@@ -1,8 +1,8 @@
 # Lead Qualificado
-Adiciona qualificação para leads ao módulo de CRM do odoo 12.
-São adicionados os campos quantidade de unidades, quantidade de blocos, quantidade de moradores, tipo de portaria (Terceirizada ou Própria) e horário da portaria (12 ou 24 horas).
-É possível popular estes campos ao criar um lead ou ao editar um lead existente.
-Também adiciona um relatório para impressão do lead com estas informações.
+Adiciona qualificação para leads ao módulo de CRM do odoo 12.\
+São adicionados os campos quantidade de unidades, quantidade de blocos, quantidade de moradores, tipo de portaria (Terceirizada ou Própria) e horário da portaria (12 ou 24 horas).\
+É possível popular estes campos ao criar um lead ou ao editar um lead existente.\
+Também adiciona um relatório para impressão do lead com estas informações.\
 
 ## Getting Started
 
